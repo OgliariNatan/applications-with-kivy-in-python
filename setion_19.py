@@ -1,3 +1,4 @@
+#coding: utf-8
 #####	NOME:				setion_19.py
 #####	VERSÃO:				1.2
 #####	DESCRIÇÃO:			Implementação dos exercícios do curso de kivy
@@ -12,27 +13,62 @@
 class Retangulo:
 
     def __init__(self, largura, altura):
-        self.largura = 0
-        self.altura = 0
-        self.set_altura(altura)
-        self.set_largura(largura)
+        self._largura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
+        self._altura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
+        self.__var = 0
+        self.set_altura(altura) #metodo acessor
+        self.set_largura(largura) #metodo acessor
 
     def set_altura(self, num):
         if(not(isinstance(num, int) and (num > 0))):
             raise ValueError("Altura é inválida: {}".format(num))
-        self.altura = num
+        self._altura = num
+        self.__var = 456
+
     def set_largura(self, num):
         if(not(isinstance(num, int) and (num > 0))):
             raise ValueError("Largura é inválida: {}".format(num))
-        self.largura = num
-    def get_area(self):
-        return self.largura * self.altura
-
-
+        self._largura = num
+    def get_area(self): #metodo de solicitação
+        return self._largura * self._altura
 
 
 #r = Retangulo(largura=10, altura=5)
-r = Retangulo(largura=1, altura=5)
-
+r = Retangulo(largura=5, altura=5)
 
 print(r.get_area())
+
+
+print('----------------------------------------------')
+print('NOVO METÓDO --- propriedade')
+
+
+class A:
+    def __init__(self):
+        self._var = 0
+    def _get_var(self):
+        print("O valor está sendo lido")
+        return self._var
+    def _set_var(self, x):
+        print("O valor está sendo escrito")
+        self._var = x
+    #Asociar a instancia ao metodo
+    var = property(fget=_get_var, fset=_set_var)
+
+a = A() #Instancia a class
+a.var = 10
+print(a.var)
+print('________________________________________________________')
+print('_______________DECOratORS_______________________')
+
+
+class B:
+    def __init__(self):
+        self._x = 0
+    @property
+    def x (self):
+        return self._x
+    @x.setter
+    def x (self, val):
+        self._x = val
+    
