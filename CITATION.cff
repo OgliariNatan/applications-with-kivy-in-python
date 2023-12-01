@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this report, please cite it as below."
+authors:
+- family-names: "Natan"
+  given-names: "Ogliari"
+  orcid: "https://orcid.org/0009-0000-2586-2481"
+title: "applications-with-kivy-in-python"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2023-12-01
+url: "https://github.com/OgliariNatan/applications-with-kivy-in-python"
