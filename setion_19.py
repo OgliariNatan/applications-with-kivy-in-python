@@ -64,11 +64,20 @@ print('_______________DECOratORS_______________________')
 
 class B:
     def __init__(self):
-        self._x = 0
+        self._var = 0
     @property
-    def x (self):
-        return self._x
-    @x.setter
-    def x (self, val):
-        self._x = val
-    
+    def var(self):
+        print("O valor está sendo lido")
+        return self._var
+    @var.setter
+    def var(self, x):
+        print("O valor está sendo escrito")
+        self._var = x
+
+
+b = B() #Instancia a class
+b.var = 10
+t = a.var
+
+print(t)
+
