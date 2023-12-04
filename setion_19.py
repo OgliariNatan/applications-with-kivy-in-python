@@ -82,7 +82,7 @@ t = a.var
 print(t)
 
 print('________________________________________________________')
-print('_______________DECOratORS_______________________')
+print('_______________DECORATORS_______________________')
 
 
 
@@ -116,3 +116,12 @@ class Retangulo:
     altura = property(fget=_get_altura,  fset=_set_altura)
     largura = property(fget=_get_largura, fset=_set_largura)
     area = property(fget=_get_area)
+
+r = Retangulo(altura=10, largura=5)
+r.largura = 50
+r.altura = 10
+print(r.altura)
+print(r.largura)
+print('valor de area')
+print(r.area)
+
