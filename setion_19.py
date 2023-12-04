@@ -7,7 +7,7 @@
 #####	ESCRITO POR:		Natan Ogliari
 #####	E-MAIL:				natanogliari@gmail.com
 #####	LICENÇA:			MIT license
-#####	PROJETO:			https://github.com/OgliariNatan/applications-with-kivy-in-python/tree/main
+#####	PROJETO:			https://github.com/OgliariNatan/applications-with-kivy-in-python
 
 #
 # class Retangulo:
