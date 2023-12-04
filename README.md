@@ -54,3 +54,48 @@ print(r.largura)
 print('valor de area')
 print(r.area)
 ```
+
+
+#### ```@property com @metodo.setter```
+Exemplo
+```Python
+class Retangulo:
+
+    def __init__(self, largura, altura):
+        self._largura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
+        self._altura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
+        self.altura = altura #metodo acessor
+        self.largura = largura #metodo acessor
+
+    @property
+    def altura(self): #metodo de solicitação
+        return self._altura
+    @altura.setter
+    def altura(self, num):
+        if(not(isinstance(num, int) and (num > 0))):
+            raise ValueError("Altura é inválida: {}".format(num))
+        self._altura = num
+
+
+    @property
+    def largura(self): #metodo de solicitação
+        return self._largura
+    @largura.setter
+    def largura(self, num):
+        if(not(isinstance(num, int) and (num > 0))):
+            raise ValueError("Largura é inválida: {}".format(num))
+        self._largura = num
+    @property
+    def area(self): #metodo de solicitação
+        return self._largura * self._altura
+
+r = Retangulo(altura=5, largura=5)
+r.largura = 5
+r.altura = 10
+#r.area = 100 #Levanta um erro, pois é apenas captura de valor em vez de setar valor.
+print("valor da altura: ", r.altura)
+print('valor da largura: ', r.largura)
+print('valor de area: ', r.area)
+
+
+```
