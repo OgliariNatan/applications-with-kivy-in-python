@@ -99,3 +99,7 @@ print('valor de area: ', r.area)
 ```
 ## Classe em Python
 - As classe são utilizadas para criar objetos e em __Python__ as mesmas também são objetos.
+- Cuidado com as nomenclatura:
+- [] MEMBROS DE CLASSE
+- [] MEMBROS DE INSTÂNCIAS
+- Aprenderemos a operar um membro de classe.
