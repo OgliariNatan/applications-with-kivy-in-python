@@ -16,27 +16,27 @@ class Retangulo:
         self._largura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
         self._altura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
         self.__var = 0
-        self.set_altura(altura) #metodo acessor
-        self.set_largura(largura) #metodo acessor
+        self._set_altura(altura) #metodo acessor
+        self._set_largura(largura) #metodo acessor
 
-    def set_altura(self, num):
+    def _set_altura(self, num):
         if(not(isinstance(num, int) and (num > 0))):
             raise ValueError("Altura é inválida: {}".format(num))
         self._altura = num
         self.__var = 456
 
-    def set_largura(self, num):
+    def _set_largura(self, num):
         if(not(isinstance(num, int) and (num > 0))):
             raise ValueError("Largura é inválida: {}".format(num))
         self._largura = num
-    def get_area(self): #metodo de solicitação
+    def _get_area(self): #metodo de solicitação
         return self._largura * self._altura
 
 
 #r = Retangulo(largura=10, altura=5)
 r = Retangulo(largura=5, altura=5)
 
-print(r.get_area())
+print(r._get_area())
 
 
 print('----------------------------------------------')
@@ -83,3 +83,36 @@ print(t)
 
 print('________________________________________________________')
 print('_______________DECOratORS_______________________')
+
+
+
+
+class Retangulo:
+
+    def __init__(self, largura, altura):
+        self._largura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
+        self._altura = 0 #Não pode acessar diretamente, utilizar os metodos acessores
+        self._set_altura(altura) #metodo acessor
+        self._set_largura(largura) #metodo acessor
+
+    def _set_altura(self, num):
+        if(not(isinstance(num, int) and (num > 0))):
+            raise ValueError("Altura é inválida: {}".format(num))
+        self._altura = num
+        self.__var = 456
+
+    def _set_largura(self, num):
+        if(not(isinstance(num, int) and (num > 0))):
+            raise ValueError("Largura é inválida: {}".format(num))
+        self._largura = num
+    def _get_area(self): #metodo de solicitação
+        return self._largura * self._altura
+    def _get_altura(self): #metodo de solicitação
+        return self._altura
+    def _get_largura(self): #metodo de solicitação
+        return self._largura
+
+
+    altura = property(fget=_get_altura,  fset=_set_altura)
+    largura = property(fget=_get_largura, fset=_set_largura)
+    area = property(fget=_get_area)

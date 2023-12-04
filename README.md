@@ -13,7 +13,7 @@ pip install -r requirement.txt
 - Nunca se acessa diretamente as variáveis.
 - uso do ```property(fget= , fset= )``` </br>
 - - ```var = property(fget=_get_var, fset=_set_var)```
-- - o uso do __ ante da variável, indica as compilador que ela não pode ser acessada diretamente.
+- - o uso do __ ante da variável, indica as compilador que ela não pode ser acessada diretamente. </br>
 Exemplo:
 ```python
 class A:
