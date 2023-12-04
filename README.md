@@ -4,4 +4,6 @@
 
 ## para uso
 * intale as dependências dos requerimentos
-```pip install -r requirement.txt```
+```shell
+pip install -r requirement.txt
+```
