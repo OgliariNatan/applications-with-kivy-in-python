@@ -9,6 +9,8 @@ pip install -r requirement.txt
 ```
 
 ### Recursos interessante (Regras)
-- Nunca se acessa diretamente as variaveis.
+#### ```property```
+- Nunca se acessa diretamente as variáveis.
 - uso do ```property(fget= , fset= )``` </br>
 - - ```var = property(fget=_get_var, fset=_set_var)```
+- - o uso do __ ante da variável, indica as compilador que ela não pode ser acessada diretamente.
