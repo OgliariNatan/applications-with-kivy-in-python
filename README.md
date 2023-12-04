@@ -96,6 +96,6 @@ r.altura = 10
 print("valor da altura: ", r.altura)
 print('valor da largura: ', r.largura)
 print('valor de area: ', r.area)
-
-
 ```
+## Classe em Python
+- As classe são utilizadas para criar objetos e em __Python__ as mesmas também são objetos.
