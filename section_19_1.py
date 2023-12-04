@@ -27,6 +27,18 @@ class MinhaClasse:
 i1 = MinhaClasse()
 i2 = MinhaClasse()
 
+print(MinhaClasse.membro_cls)
+print(i1.membro_cls)
+print(i2.membro_cls)
+print("-----inicio--------")
+
+i1.membro_cls = 1000
+print(MinhaClasse.membro_cls)
+print(i1.membro_cls)
+print(i2.membro_cls)
+
+print("----FIM------")
+
 i1.mebro_inst = 10
 print('i1: ' + str(i1.mebro_inst))
 print('i2: ' + str(i2.mebro_inst))
