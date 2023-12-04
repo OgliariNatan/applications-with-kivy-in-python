@@ -7,3 +7,8 @@
 ```shell
 pip install -r requirement.txt
 ```
+
+### Recursos interessante (Regras)
+- Nunca se acessa diretamente as variaveis.
+- uso do ```property(fget= , fset= )``` </br>
+- - ```var = property(fget=_get_var, fset=_set_var)```
