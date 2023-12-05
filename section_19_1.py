@@ -91,13 +91,15 @@ class Bichos:
         self.del_bicho()
         if(self.qnt_bichos==-0):
             print("Todos os bichod forãm mortos")
+    @classmethod
     def add_bicho(cls): #do tipo "cls" ---- metodos de classe
         cls.qnt_bichos +=1
+    @classmethod
     def del_bicho(cls):
         cls.qnt_bichos -=1
 
-    add_bicho = classmethod(add_bicho) #informo que é um objeto de classe
-    del_bicho = classmethod(del_bicho) #informo que é um objeto de classe
+    #add_bicho = classmethod(add_bicho) #informo que é um objeto de classe
+    #del_bicho = classmethod(del_bicho) #informo que é um objeto de classe
 
 b1 = Bichos()
 print(Bichos.qnt_bichos)
