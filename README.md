@@ -7,7 +7,7 @@
 ```shell
 pip install -r requirement.txt
 ```
-- [x] [Manual em portugues do kivy][/kivy-pt_br-excript.pdf]
+- [x] [Manual em portugues do kivy](/kivy-pt_br-excript.pdf)
 
 ### Recursos interessante (Regras)
 #### ```property```
