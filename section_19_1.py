@@ -64,3 +64,16 @@ print(AAA.var_cls)
 print(bbb.var_inst)
 print(bbb.var_cls)
 
+
+print("-----------------------------------------")
+print("-----------------------------------------")
+
+class I:
+    attr = 0
+    print("Esta na classe")
+
+instancia = I()
+
+instancia.attr = 10
+
+print(instancia.attr)
