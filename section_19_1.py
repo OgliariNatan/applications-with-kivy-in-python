@@ -116,5 +116,39 @@ del(b3)
 print(Bichos.qnt_bichos)
 
 print("----------------------------")
-print("-------Metodos estaticos----")
+print("-------Métodos estáticos----")
+
+
+class MEstatico:
+    @staticmethod
+    def func1():
+        print("Func1()")
+    @staticmethod
+    def func2(x, y):
+        print("Função '{}' invocada. \nparmn = ({}, {})".format("func2",x , y))
+    @staticmethod
+    def func3(a, b, c):
+        info = """
+        Nome da função:     {nome}
+        Quantidade de Args: {quantidade}
+        Args:               {args}
+        """
+        info = info.format(
+            nome=MEstatico.func3.__name__,
+            quantidade=MEstatico.func3.__code__.co_argcount,
+            args=MEstatico.func3.__code__.co_varnames
+        )
+        print(info)#Enviapara a saíd padrão
+
+    #func1 = staticmethod(func1) #Comentado para o uso com decorrate
+    #func2 = staticmethod(func2)
+    #func3 = staticmethod(func3)
+
+me = MEstatico()
+
+me.func1() #Atraves de uma instancia
+print("")
+me.func2(100, 200)
+print("")
+me.func3(5, 10, 15)
 
