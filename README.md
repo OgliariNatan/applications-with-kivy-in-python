@@ -111,7 +111,7 @@ print('valor de area: ', r.area)
 - Exemplo de Método de classe:
 ```python
 class A:
-
+  #Todas as instancias possuem acesso
   @classmethod
   def fun(cls, arg1, arg2, ...):
     pass #Informa que não irei implementar por enquanto
