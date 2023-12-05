@@ -77,3 +77,38 @@ instancia = I()
 instancia.attr = 10
 
 print(instancia.attr)
+
+print("----------------------------")
+print("--------Metodo de clase-----")
+
+
+class Bichos:
+
+    qnt_bichos = 0
+    def __init__(self):
+        self.add_bicho()
+    def __del__(self):
+        self.del_bicho()
+        if(self.qnt_bichos==-0):
+            print("Todos os bichod forãm mortos")
+    def add_bicho(cls): #do tipo "cls" ---- metodos de classe
+        cls.qnt_bichos +=1
+    def del_bicho(cls):
+        cls.qnt_bichos -=1
+
+    add_bicho = classmethod(add_bicho) #informo que é um objeto de classe
+    del_bicho = classmethod(del_bicho) #informo que é um objeto de classe
+
+b1 = Bichos()
+print(Bichos.qnt_bichos)
+b2 = Bichos()
+print(Bichos.qnt_bichos)
+b3 = Bichos()
+print(Bichos.qnt_bichos)
+
+del(b1)
+print(Bichos.qnt_bichos)
+del(b2)
+print(Bichos.qnt_bichos)
+del(b3)
+print(Bichos.qnt_bichos)
