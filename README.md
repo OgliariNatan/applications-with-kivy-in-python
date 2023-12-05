@@ -103,3 +103,6 @@ print('valor de area: ', r.area)
 - [x] MEMBROS DE CLASSE
 - [x] MEMBROS DE INSTÂNCIAS
 - Aprenderemos a operar um membro de classe.
+
+* Ao operar as classes, altera-se todos os membros juntos, se alterar apenas o membro será alterado apenas no referido.
+* Na busca por atributos o __Python__, irá busca primeiro na membro atributo, caso não encontre ele busca na classe.
