@@ -114,3 +114,7 @@ del(b2)
 print(Bichos.qnt_bichos)
 del(b3)
 print(Bichos.qnt_bichos)
+
+print("----------------------------")
+print("-------Metodos estaticos----")
+

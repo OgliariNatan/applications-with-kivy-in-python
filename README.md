@@ -117,3 +117,5 @@ class A:
     pass #Informa que não irei implementar por enquanto
 
 ```
+## Método Estáticos
+- Não possui relação direta com a classe, porém são membro de classe. sem a declaração de parâmetros "cls" ou "self"
