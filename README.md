@@ -106,3 +106,14 @@ print('valor de area: ', r.area)
 
 * Ao operar as classes, altera-se todos os membros juntos, se alterar apenas o membro será alterado apenas no referido.
 * Na busca por atributos o __Python__, irá busca primeiro na membro atributo, caso não encontre ele busca na classe.
+
+
+- Exemplo de Método de classe:
+```python
+class A:
+
+  @classmethod
+  def fun(cls, arg1, arg2, ...):
+    pass #Informa que não irei implementar por enquanto
+
+```
