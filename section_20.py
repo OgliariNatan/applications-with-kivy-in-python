@@ -15,6 +15,8 @@ from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.floatlayout import FloatLayout
+from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
+
 
 #App().run() #Gera uma janela em "branco"
 
@@ -48,6 +50,9 @@ from kivy.uix.floatlayout import FloatLayout
 ######################### PARA BAIXO
 
 
+def click():
+    print("Olá")
+
 
 def build(): #Definição de componentes de tela
     layoute = FloatLayout() #Gerenciador de layoute
@@ -55,13 +60,19 @@ def build(): #Definição de componentes de tela
     ed = TextInput(text="Natan Ogliari") #Entrada de texto
     ed.size_hint = None, None #Redifine a posição do componente
     ed.height = 300
-    ed.right = 400
+    ed.width = 400
     ed.x = 60
     ed.y = 250
 
 
     bt = Button(text="Clique aqui") # Adiciona botãoao layoute
     bt.size_hint = None, None #Redifine a posição do componente
+    bt.height = 50
+    bt.right = 200
+    bt.x = 150
+    bt.y = 170
+
+    bt.on_press = click
 
 
     layoute.add_widget(ed) #Adiciona a instancia ao layoute
@@ -70,5 +81,8 @@ def build(): #Definição de componentes de tela
     return layoute
 
 janela = App()
+
+Window.size = 600, 600 #Define o tamanho da janela de fundo(da aplicação)
+
 janela.build = build
 janela.run()
