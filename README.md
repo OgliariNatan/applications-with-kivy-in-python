@@ -120,3 +120,13 @@ class A:
 ```
 ## Método Estáticos
 - Não possui relação direta com a classe, porém são membro de classe. sem a declaração de parâmetros "cls" ou "self"
+
+## Tela com algumas funcionalidades da biblioteca kivy
+
+```python
+from kivy.app import App
+from kivy.uix.label import Label          #Escrita de texto
+from kivy.uix.button import Button        #Botão
+from kivy.uix.textinput import TextInput  #Entrada de texto
+
+```
