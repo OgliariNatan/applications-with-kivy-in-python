@@ -17,26 +17,26 @@ from kivy.uix.textinput import TextInput
 
 #App().run() #Gera uma janela em "branco"
 
-def click():
-    print("O botão foi clicado")
-
-def build():
-    #Para impressão de textos
-    lb = Label()
-    lb.text= "NATAN OGLIARI"
-    lb.italic=True
-    lb.font_size=50
-    # return lb
-
-    #para geração de botões
-    bt = Button()
-    bt.text="Clique Aqui"
-    bt.font_size=20
-    bt.on_press = click
-    #return bt
-
-    #texto de entrada
-    return TextInput(text="Componente entrada de texto")
+# def click():
+#     print("O botão foi clicado")
+#
+# def build():
+#     #Para impressão de textos
+#     lb = Label()
+#     lb.text= "NATAN OGLIARI"
+#     lb.italic=True
+#     lb.font_size=50
+#     # return lb
+#
+#     #para geração de botões
+#     bt = Button()
+#     bt.text="Clique Aqui"
+#     bt.font_size=20
+#     bt.on_press = click
+#     #return bt
+#
+#     #texto de entrada
+#     return TextInput(text="Componente entrada de texto")
 
 
 app = App()
