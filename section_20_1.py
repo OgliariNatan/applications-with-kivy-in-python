@@ -1,5 +1,5 @@
 #coding: utf-8
-#####	NOME:				setion_19.py
+#####	NOME:				setion_20_1.py
 #####	VERSÃO:				1.2
 #####	DESCRIÇÃO:			Implementação dos exercícios do curso de kivy
 #####	DATA DA CRIAÇÃO:	01/12/2023
@@ -17,13 +17,10 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
 
+class MeuProgra(App):
 
-def build(): #Definição de componentes de tela
+    def build(self): #Definição de componentes de tela
+        return Label()
 
-    return Label()
 
-janela = App()
-janela.title = "Início" #Nome da aplicação
-
-janela.build = build
-janela.run()
+MeuProgra().run()

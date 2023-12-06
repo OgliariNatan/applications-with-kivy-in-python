@@ -120,9 +120,13 @@ class A:
 ```
 ## Método Estáticos
 - Não possui relação direta com a classe, porém são membro de classe. sem a declaração de parâmetros "cls" ou "self"
+## Posicionamento
+- A biblioteca __Kivy__ opera no primeiro plano cartesiano.
+- o Posicionamento se baseia-se no ângulo inferior esquerdo, para início do posicionamento.
+- É de responsabilidade do programador posicionar as janelas, caso contrario, não será exibido na tela
 
 ## Tela com algumas funcionalidades da biblioteca kivy
-- A aplicação permite apenas um widget's principal, porém, cria-se leiautes para várias janelas. 
+- A aplicação permite apenas um widget's principal, porém, cria-se leiautes para várias janelas.
 ```python
 from kivy.app import App
 from kivy.uix.label import Label          #Escrita de texto
