@@ -1,5 +1,5 @@
 #coding: utf-8
-#####	NOME:				setion_19.py
+#####	NOME:				setion_20.py
 #####	VERSÃO:				1.2
 #####	DESCRIÇÃO:			Implementação dos exercícios do curso de kivy
 #####	DATA DA CRIAÇÃO:	01/12/2023
