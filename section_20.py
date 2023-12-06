@@ -51,12 +51,14 @@ from kivy.core.window import Window #Para alterar o tamanho da janela de aoplica
 
 
 def click():
-    print("Olá")
+    print(ed.text)
+
 
 
 def build(): #Definição de componentes de tela
     layoute = FloatLayout() #Gerenciador de layoute
 
+    global ed # Não usa assim, apenas para aprendizado
     ed = TextInput(text="Natan Ogliari") #Entrada de texto
     ed.size_hint = None, None #Redifine a posição do componente
     ed.height = 300
@@ -71,7 +73,6 @@ def build(): #Definição de componentes de tela
     bt.right = 200
     bt.x = 150
     bt.y = 170
-
     bt.on_press = click
 
 
@@ -81,8 +82,8 @@ def build(): #Definição de componentes de tela
     return layoute
 
 janela = App()
-
-Window.size = 600, 600 #Define o tamanho da janela de fundo(da aplicação)
+janela.title = "Início" #Nome da aplicação
+Window.size = 500, 550 #Define o tamanho da janela de fundo(da aplicação)
 
 janela.build = build
 janela.run()
