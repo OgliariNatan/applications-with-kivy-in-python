@@ -125,7 +125,9 @@ class A:
 - o Posicionamento se baseia-se no ângulo inferior esquerdo, para início do posicionamento.
 - É de responsabilidade do programador posicionar as janelas, caso contrario, não será exibido na tela
 - Sistemas de medidas responsivo.
-- Definir de forma automática com consequência a resolução das telas(pix's). 
+- Definir de forma automática com consequência a resolução das telas(pixel).
+- dp, independa do tamanho da tela é proporcional a largura de pixel pela densidade da tela.
+![dp](figure/dp.png)
 
 ## Tela com algumas funcionalidades da biblioteca __kivy__
 - A aplicação permite apenas um widget's principal, porém, cria-se leiautes para várias janelas.
