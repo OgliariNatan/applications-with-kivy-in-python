@@ -14,6 +14,7 @@ from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+from kivy.uix.floatlayout import FloatLayout
 
 #App().run() #Gera uma janela em "branco"
 
@@ -39,6 +40,35 @@ from kivy.uix.textinput import TextInput
 #     return TextInput(text="Componente entrada de texto")
 
 
-app = App()
-app.build = build
-app.run()
+# app = App()
+# app.build = build
+# app.run()
+
+
+######################### PARA BAIXO
+
+
+
+def build(): #Definição de componentes de tela
+    layoute = FloatLayout() #Gerenciador de layoute
+
+    ed = TextInput(text="Natan Ogliari") #Entrada de texto
+    ed.size_hint = None, None #Redifine a posição do componente
+    ed.height = 300
+    ed.right = 400
+    ed.x = 60
+    ed.y = 250
+
+
+    bt = Button(text="Clique aqui") # Adiciona botãoao layoute
+    bt.size_hint = None, None #Redifine a posição do componente
+
+
+    layoute.add_widget(ed) #Adiciona a instancia ao layoute
+    layoute.add_widget(bt) #Adiciona a instancia ao layoute
+
+    return layoute
+
+janela = App()
+janela.build = build
+janela.run()
