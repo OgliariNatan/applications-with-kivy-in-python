@@ -16,3 +16,11 @@ from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
+
+
+class HelloApp(App):
+
+    def build(self):
+        return Label(text="Natan Ogliari")
+
+HelloApp().run()
