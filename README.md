@@ -142,7 +142,7 @@ from kivy.uix.textinput import TextInput  #Entrada de texto
 
 
 
-# Linguagem __Kivy__ :50
+# Linguagem __Kivy__ 
 
 ```python
 <ClassName>: #É o top da janela, (Haverá uma única janela, pois os dispositivos moveis usam apenas uma janela)
