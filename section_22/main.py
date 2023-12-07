@@ -18,7 +18,11 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
 
 
-class Section_22App(App):
+
+class HelloApp(App):
     pass
 
-Section_22App().run()
+
+HelloApp().run()
+
+
