@@ -19,10 +19,18 @@ from kivy.core.window import Window #Para alterar o tamanho da janela de aoplica
 
 
 
-class HelloApp(App):
+# class HelloApp(App):
+#     pass
+#
+#
+# HelloApp().run()
+class RootWidget(FloatLayout):
     pass
 
+class MedidaApp(App):
 
-HelloApp().run()
+    def build(self):
+        return RootWidget()
 
+MedidaApp().run()
 
