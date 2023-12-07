@@ -146,6 +146,15 @@ from kivy.uix.textinput import TextInput  #Entrada de texto
 
 ```python
 <ClassName>: #É o top da janela, (Haverá uma única janela, pois os dispositivos moveis usam apenas uma janela)
+  LayoutType: #Gerenciador de Layout
+    WidgetType: # Widget (Terá vários)
+      pos: 10, 10
+      size: .5, .5
 
+  LayoutType2: #Gerenciador de Layout generico
+      font_size: 70
+      center_x: root.width / 4
+      top: root.top - 5
+      text: "0"
 
 ```
