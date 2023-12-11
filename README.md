@@ -178,3 +178,10 @@ pyhton nome_app.py -m screen:nome_dispositivo
 
 ### ipython
 - Roda em linha de comando e interage em diversas outros scripty
+
+```shell
+cd dir_app
+
+jupyter notebook #Abre o jupyter no navegador padrão
+
+```
