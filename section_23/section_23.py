@@ -20,7 +20,7 @@ Inicio:
 
     Login:
         id: popup
-        size_hint: 0.7, 0.4
+        size_hint: 0.7, 0.4 
 
 <Login@Popup>:
 

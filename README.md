@@ -175,3 +175,6 @@ python nome_app.py -m screen #Lista os dispositivos suportados
 
 pyhton nome_app.py -m screen:nome_dispositivo
 ```
+
+### ipython
+- Roda em linha de comando e interage em diversas outros scripty
