@@ -161,3 +161,17 @@ from kivy.uix.textinput import TextInput  #Entrada de texto
 ## Propriedades Percentuais
 
 ![Propriedade de posição](figure/prp.png)
+
+
+## Para testes de tela em diversas telas de aparelhos movéis :D
+
+```sheel
+activate k35 #Ativa o ambiente virtual do python 3.5
+
+#Vá no diretório da aplicação
+dir "caminho_path_app"
+
+python nome_app.py -m screen #Lista os dispositivos suportados
+
+pyhton nome_app.py -m screen:nome_dispositivo
+```
