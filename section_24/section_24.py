@@ -9,12 +9,27 @@
 #####	LICENÇA:			MIT license
 #####	PROJETO:			https://github.com/OgliariNatan/applications-with-kivy-in-python
 import kivy
-kivy.require('1.9.1')
+#kivy.require('1.9.1')
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.button import Button
+from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
 
+class Tela1(BoxLayout):
+    def __init__(self, **kwargs):
+        super(Tela1, self).__init__(**kwargs)
+        self.orientation = "vertical"
+        bt1 = Button(text="bt1")
+        self.add_widget(bt1)
+        self.add_widget(Button(text="bt2"))
+        self.add_widget(Button(text="bt3"))
 
+class KVvsPY(App):
+    def build(self):
+        return Tela1
+
+janela = KVvsPY()
+janela.run()
