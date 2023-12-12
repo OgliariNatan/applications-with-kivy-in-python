@@ -32,7 +32,7 @@ class Tela2(BoxLayout):
         janela.root_window.remove_widget(janela.root)
         janela.root_window.add_widget(Tela1())
 
-   
+
 
 class KVvsPY2(App):
     def build(self):
