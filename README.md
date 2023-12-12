@@ -185,3 +185,9 @@ cd dir_app
 jupyter notebook #Abre o jupyter no navegador padrão
 
 ```
+## kivy
+
+
+- MinhaApp - minha.kv
+- ProgramaApp - programa.kv
+- Prog - prog.kv
