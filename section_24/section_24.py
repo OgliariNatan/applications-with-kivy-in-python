@@ -19,17 +19,31 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
 
 class Tela1(BoxLayout):
+
+    def on_press_bt(self):
+        
+
     def __init__(self, **kwargs):
         super(Tela1, self).__init__(**kwargs)
         self.orientation = "vertical"
-        bt1 = Button(text="bt1")
+        bt1 = Button(text="NATAN")
         self.add_widget(bt1)
-        self.add_widget(Button(text="bt2"))
-        self.add_widget(Button(text="bt3"))
+        self.add_widget(Button(text="Ogliari"))
+        self.add_widget(Button(text="Quase engenheiro"))
+
+class Tela2(BoxLayout):
+
+    def __init__(self, **kwargs):
+        super(Tela2).__init__(**kwargs)
+        self.orientation = "vertical"
+        bt = Button(text="Clique")
+        self.add_widget(bt)
+
+
 
 class KVvsPY(App):
     def build(self):
-        return Tela1
+        return Tela1()
 
 janela = KVvsPY()
 janela.run()
