@@ -8,3 +8,13 @@
 #####	E-MAIL:				natanogliari@gmail.com
 #####	LICENÇA:			MIT license
 #####	PROJETO:			https://github.com/OgliariNatan/applications-with-kivy-in-python
+import kivy
+kivy.require('1.9.1')
+from kivy.app import App
+from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
+from kivy.uix.floatlayout import FloatLayout
+from kivy.core.window import Window #Para alterar o tamanho da janela de aoplicação
+
+
