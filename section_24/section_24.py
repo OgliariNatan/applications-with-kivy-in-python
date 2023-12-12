@@ -9,7 +9,7 @@
 #####	LICENÇA:			MIT license
 #####	PROJETO:			https://github.com/OgliariNatan/applications-with-kivy-in-python
 import kivy
-#kivy.require('1.9.1')
+kivy.require('1.9.1')
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.button import Button
@@ -31,23 +31,35 @@ class Tela1(BoxLayout):
         bt1.on_press = self.on_press_bt
         self.add_widget(bt1)
         self.add_widget(Button(text="Ogliari"))
-        self.add_widget(Button(text="Quase engenheiro"))
+        self.add_widget(Button(text="Quase engenheiro")) #Caso precise do click do botão nõ pode implementar desta forma
+
 
 class Tela2(BoxLayout):
+
+    def on_press_bt(self):
+        janela.root_window.remove_widget(janela.root)
+        janela.root_window.add_widget(Tela3())
+
+    def __init__(self, **kwargs):
+        super(Tela2, self).__init__(**kwargs)
+        self.orientation = "vertical"
+        bt = Button(text="Tela 2")
+        bt.on_press = self.on_press_bt
+
+        self.add_widget(bt)
+
+class Tela3(BoxLayout):
 
     def on_press_bt(self):
         janela.root_window.remove_widget(janela.root)
         janela.root_window.add_widget(Tela1())
 
     def __init__(self, **kwargs):
-        super(Tela2, self).__init__(**kwargs)
+        super(Tela3, self).__init__(**kwargs)
         self.orientation = "vertical"
-        bt = Button(text="Clique")
-        bt.on_press = self.on_press_bt
-
-        self.add_widget(bt)
-
-
+        bt3 = Button(text="Tela 3")
+        bt3.on_press = self.on_press_bt
+        self.add_widget(bt3)
 
 class KVvsPY(App):
     def build(self):
