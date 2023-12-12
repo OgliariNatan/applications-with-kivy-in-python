@@ -48,9 +48,9 @@ class Tela2(BoxLayout):
         self.add_widget(bt)
 
 
-class KVvsPY(App):
+class KVvsPY2(App):
     def build(self):
         return Tela1()
 
-janela = KVvsPY()
+janela = KVvsPY2()
 janela.run()
