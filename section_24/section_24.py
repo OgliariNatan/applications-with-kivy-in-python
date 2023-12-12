@@ -31,7 +31,7 @@ class Tela1(BoxLayout):
         bt1.on_press = self.on_press_bt
         self.add_widget(bt1)
         self.add_widget(Button(text="Ogliari"))
-        self.add_widget(Button(text="Quase engenheiro")) #Caso precise do click do botão nõ pode implementar desta forma
+        self.add_widget(Button(text="Quase engenheiro")) #Caso precise do click do botão não pode implementar desta forma
 
 
 class Tela2(BoxLayout):
@@ -45,7 +45,6 @@ class Tela2(BoxLayout):
         self.orientation = "vertical"
         bt = Button(text="Tela 2")
         bt.on_press = self.on_press_bt
-
         self.add_widget(bt)
 
 class Tela3(BoxLayout):
