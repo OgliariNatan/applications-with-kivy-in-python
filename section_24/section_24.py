@@ -21,22 +21,30 @@ from kivy.core.window import Window #Para alterar o tamanho da janela de aoplica
 class Tela1(BoxLayout):
 
     def on_press_bt(self):
-        
+        janela.root_window.remove_widget(janela.root)
+        janela.root_window.add_widget(Tela2())
 
     def __init__(self, **kwargs):
         super(Tela1, self).__init__(**kwargs)
         self.orientation = "vertical"
         bt1 = Button(text="NATAN")
+        bt1.on_press = self.on_press_bt
         self.add_widget(bt1)
         self.add_widget(Button(text="Ogliari"))
         self.add_widget(Button(text="Quase engenheiro"))
 
 class Tela2(BoxLayout):
 
+    def on_press_bt(self):
+        janela.root_window.remove_widget(janela.root)
+        janela.root_window.add_widget(Tela1())
+
     def __init__(self, **kwargs):
         super(Tela2).__init__(**kwargs)
         self.orientation = "vertical"
         bt = Button(text="Clique")
+        bt.on_press = self.on_press_bt
+        
         self.add_widget(bt)
 
 
