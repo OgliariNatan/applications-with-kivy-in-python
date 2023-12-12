@@ -40,11 +40,11 @@ class Tela2(BoxLayout):
         janela.root_window.add_widget(Tela1())
 
     def __init__(self, **kwargs):
-        super(Tela2).__init__(**kwargs)
+        super(Tela2, self).__init__(**kwargs)
         self.orientation = "vertical"
         bt = Button(text="Clique")
         bt.on_press = self.on_press_bt
-        
+
         self.add_widget(bt)
 
 
