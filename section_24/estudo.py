@@ -37,6 +37,8 @@ class MinhaTela(BoxLayout):
 
     def click(self):
         print("oi")
+        self.ids.ld1.text = ""
+        self.ids.ld2.text = "Ogliari"
 
 class Estudo4App(App):
     pass
