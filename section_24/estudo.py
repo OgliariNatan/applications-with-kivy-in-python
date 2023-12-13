@@ -17,3 +17,10 @@ from kivy.app import App
 #
 # janela = Estudo1App()
 # janela.run()
+
+
+class Estudo2App(App):
+    pass
+
+janela = Estudo2App()
+janela.run()
