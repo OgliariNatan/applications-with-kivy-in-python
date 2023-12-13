@@ -19,8 +19,14 @@ from kivy.app import App
 # janela.run()
 
 
-class Estudo2App(App):
+# class Estudo2App(App):
+#     pass
+#
+# janela = Estudo2App()
+# janela.run()
+
+class Estudo3App(App):
     pass
 
-janela = Estudo2App()
+janela = Estudo3App()
 janela.run()
