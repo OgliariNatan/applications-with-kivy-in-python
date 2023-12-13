@@ -195,4 +195,4 @@ jupyter notebook #Abre o jupyter no navegador padrão
 
 ## Palavras reservadas em Kivy
 
-[figure](figure/palavras.png)
+[figure](figure/reservadas.png)
