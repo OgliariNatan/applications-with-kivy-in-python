@@ -11,6 +11,7 @@
 import kivy
 kivy.require('1.9.1')
 from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
 
 # class Estudo1App(App):
 #     pass
@@ -25,8 +26,20 @@ from kivy.app import App
 # janela = Estudo2App()
 # janela.run()
 
-class Estudo3App(App):
+# class Estudo3App(App):
+#     pass
+#
+# janela = Estudo3App()
+# janela.run()
+
+
+class MinhaTela(BoxLayout):
+
+    def click(self):
+        print("oi")
+
+class Estudo4App(App):
     pass
 
-janela = Estudo3App()
+janela = Estudo4App()
 janela.run()
