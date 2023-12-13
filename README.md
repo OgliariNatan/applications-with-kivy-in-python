@@ -191,3 +191,8 @@ jupyter notebook #Abre o jupyter no navegador padrão
 - MinhaApp - minha.kv
 - ProgramaApp - programa.kv
 - Prog - prog.kv
+
+
+## Palavras reservadas em Kivy
+
+[figure](figure/palavras.png)
