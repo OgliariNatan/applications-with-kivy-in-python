@@ -202,7 +202,7 @@ jupyter notebook #Abre o jupyter no navegador padrão
 ```kivy
 <Class>:
     Label:
-        text: str(self.opacity) # Aponta para 
+        text: str(self.opacity) # Aponta para
 
 
 
@@ -216,6 +216,6 @@ jupyter notebook #Abre o jupyter no navegador padrão
 <Class>:
     Label:
         app.name
-
-
 ```
+
+## Widget ![wd](figure/wid.png)

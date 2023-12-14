@@ -37,6 +37,7 @@ code = """
 
 BoxLayout:
     Button:
+        orientation: "vertical"
         text: "1"
     
     Button:
