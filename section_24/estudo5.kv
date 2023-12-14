@@ -16,14 +16,15 @@
     orientation: "vertical"
 
     Button:
-        text: "ok"
-        on_press: root.click()
-    Label:
-        text: "Label 1"
-        id: ld1
+        text: "self"
+        on_press: self.click()
 
-    Label:
-        text: "Label 2"
-        id: ld2 #Define um identificador para o label de forma que o python possa acessar
+    Button:
+        text: "root"
+        on_press: root.click()
+
+    Button:
+        text: "app"
+        on_press: app.click()
 
 MinhaTela:
