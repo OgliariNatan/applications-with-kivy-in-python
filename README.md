@@ -196,3 +196,20 @@ jupyter notebook #Abre o jupyter no navegador padrão
 ## Palavras reservadas em Kivy
 
 ![Palavras Reservadas](figure/reservadas.png)
+
+
+
+```kivy
+<Classe>:
+    Label:
+      #root = <Classe> Aponta para a classe implementada pelo pyhton
+      text:root.orientation
+
+
+###############################
+<Class>:
+    Label:
+        app.name
+
+
+```
