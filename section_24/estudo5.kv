@@ -1,0 +1,29 @@
+
+
+# isso é um comentario
+
+#A Linha abaixo é uma importação de pacotes python
+#:import o os
+
+#A linha abaixo é uma definição de uma variavél
+#:set x 10
+
+
+
+
+
+<MinhaTela@BoxLayout>:
+    orientation: "vertical"
+
+    Button:
+        text: "ok"
+        on_press: root.click()
+    Label:
+        text: "Label 1"
+        id: ld1
+
+    Label:
+        text: "Label 2"
+        id: ld2 #Define um identificador para o label de forma que o python possa acessar
+
+MinhaTela:

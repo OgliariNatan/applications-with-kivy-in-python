@@ -40,8 +40,8 @@ class MinhaTela(BoxLayout):
         self.ids.ld1.text = ""
         self.ids.ld2.text = "Ogliari"
 
-class Estudo4App(App):
+class Estudo5App(App):
     pass
 
-janela = Estudo4App()
+janela = Estudo5App()
 janela.run()
