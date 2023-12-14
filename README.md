@@ -200,6 +200,12 @@ jupyter notebook #Abre o jupyter no navegador padrão
 
 
 ```kivy
+<Class>:
+    Label:
+        text: str(self.opacity) # Aponta para 
+
+
+
 <Classe>:
     Label:
       #root = <Classe> Aponta para a classe implementada pelo pyhton
