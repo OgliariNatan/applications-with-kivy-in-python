@@ -12,6 +12,7 @@ import kivy
 kivy.require('1.9.1')
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
 
 # class Estudo1App(App):
 #     pass
@@ -32,16 +33,20 @@ from kivy.uix.boxlayout import BoxLayout
 # janela = Estudo3App()
 # janela.run()
 
+def funcSelf(x):
+    print("FuncSelf")
+
+Button.funcSelf = funcSelf
+
 
 class MinhaTela(BoxLayout):
 
-    def click(self):
-        print("oi")
-        self.ids.ld1.text = ""
-        self.ids.ld2.text = "Ogliari"
+    def funcRoot(self):
+        print("funcRoot")
 
-class Estudo5App(App):
-    pass
+class Estudo6App(App):
+    def funcApp(self):
+        print("funcApp")
 
-janela = Estudo5App()
+janela = Estudo6App()
 janela.run()
