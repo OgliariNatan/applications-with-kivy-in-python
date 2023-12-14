@@ -33,20 +33,23 @@ from kivy.uix.button import Button
 # janela = Estudo3App()
 # janela.run()
 
-def funcSelf(x):
-    print("FuncSelf")
+code = """
 
-Button.funcSelf = funcSelf
+BoxLayout:
+    Button:
+        text: "1"
+    
+    Button:
+        text: "2"
+
+"""
+from kivy.lang import Builder
 
 
-class MinhaTela(BoxLayout):
-
-    def funcRoot(self):
-        print("funcRoot")
 
 class Estudo6App(App):
-    def funcApp(self):
-        print("funcApp")
+    def build(self):
+        return Builder.load_string(code)
 
 janela = Estudo6App()
 janela.run()
