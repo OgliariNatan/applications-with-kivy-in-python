@@ -219,5 +219,3 @@ jupyter notebook #Abre o jupyter no navegador padrão
 ```
 
 ## Widget ![wd](figure/wid.png)
-
-//*[@id="js-clones-graph"]
