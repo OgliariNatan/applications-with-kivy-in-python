@@ -219,3 +219,6 @@ jupyter notebook #Abre o jupyter no navegador padrão
 ```
 
 ## Widget ![wd](figure/wid.png)
+
+
+##Label
