@@ -13,3 +13,13 @@ kivy.require('1.9.1')
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
+from kivy.uix.label import Label
+from kivy.interactive import InteractiveLauncher
+from kivy.lang import Builder
+
+#Força a aplicação a não iniciar em tela cheia
+from kivy.config import Config
+Config.set("graphis", "fullscreen", "0")
+
+janela = None
+glayout = None
