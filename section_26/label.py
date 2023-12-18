@@ -32,6 +32,14 @@ glayout = None
 class JanelaApp(App):
     pass
 
+def add_lb(**args):
+    lb = Label(text="Natan",
+               size_hint_y=None,
+                height=50,
+                **args)
+    glayout.add_widget(lb)
+    return lb
+
 janela = JanelaApp()
 
 kvcode = """
@@ -49,3 +57,10 @@ if(janela.root):
 
 janela.root = glayout = Builder.load_string( kvcode )
 janela.root_window.add_widget( glayout )
+
+
+
+
+
+ji = InteractiveLauncher( janela )
+ji.run()
