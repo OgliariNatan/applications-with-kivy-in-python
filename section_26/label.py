@@ -19,6 +19,8 @@ from kivy.lang import Builder
 from kivy.utils import get_color_from_hex
 from kivy.core.window import Window
 from tkinter import *
+from kivy.uix.gridlayout import GridLayout
+
 Window.clarcolor = get_color_from_hex("#FFFFFF")
 
 #Força a aplicação a não iniciar em tela cheia
@@ -51,16 +53,27 @@ StackLayout:
 """
 
 if(janela.root):
-    janela.root_window.remove_widget( janela.root )
+    janela.root_window.remove_widget(janela.root)
     janela.root = None
     glayout = None
 
-janela.root = glayout = Builder.load_string( kvcode )
-janela.root_window.add_widget( glayout )
+janela.root = glayout = Builder.load_string(kvcode)
+janela.root_window.add_widget(glayout)
+#font_size determina o tamanha da fonte
+add_lb().font_size = 24
+#Determina o tipo da fonte
+x = add_lb()
+x.font_name = "consola"
+#Negrito
+add_lb().bold = True
+#Italico
+add_lb().italic = True
+#Informa que esta desativado (apagado)
+add_lb(font_size=20).disabled = True
 
 
+add_lb(font_size=20).color = .1, .2, .3, 1
 
 
-
-ji = InteractiveLauncher( janela )
+ji = InteractiveLauncher(janela)
 ji.run()
