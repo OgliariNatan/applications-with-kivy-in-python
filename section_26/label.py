@@ -40,6 +40,13 @@ StackLayout:
 
 """
 
+if(janela.root):
+    janela.root_window.remove_widget(janela.root)
+    janela.root = None
+    glayout = None
+
+janela.root = glayout = Builder.load_string(kvcode)
+janela.root_window.add_widget(glayout)
 
 
 def add_lb(**args):
@@ -52,13 +59,9 @@ def add_lb(**args):
 
 
 
-if(janela.root):
-    janela.root_window.remove_widget(janela.root)
-    janela.root = None
-    glayout = None
 
-janela.root = glayout = Builder.load_string(kvcode)
-janela.root_window.add_widget(glayout)
+
+
 #font_size determina o tamanha da fonte
 add_lb().font_size = 24
 #Determina o tipo da fonte

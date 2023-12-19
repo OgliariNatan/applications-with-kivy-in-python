@@ -41,6 +41,13 @@ StackLayout:
     padding: 50
 """
 
+if(janela.root):
+    janela.root_window.remove_widget(janela.root)
+    janela.root = None
+    glayout = None
+
+janela.root = glayout = Builder.load_string(kvcode)
+janela.root_window.add_widget(glayout)
 
 def add_lb(**args):
     lb = Label(text="Natan",
@@ -49,29 +56,6 @@ def add_lb(**args):
                 **args)
     glayout.add_widget(lb)
     return lb
-
-
-if(janela.root):
-    janela.root_window.remove_widget(janela.root)
-    janela.root = None
-    glayout = None
-
-janela.root = glayout = Builder.load_string(kvcode)
-janela.root_window.add_widget(glayout)
-#font_size determina o tamanha da fonte
-add_lb().font_size = 24
-#Determina o tipo da fonte
-x = add_lb()
-x.font_name = "consola"
-#Negrito
-add_lb().bold = True
-#Italico
-add_lb().italic = True
-#Informa que esta desativado (apagado)
-add_lb(font_size=20).disabled = True
-
-
-add_lb(font_size=20).color = .1, .2, .3, 1
 
 
 
