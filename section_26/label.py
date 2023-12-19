@@ -9,19 +9,13 @@
 #####	LICENÇA:			MIT license
 #####	PROJETO:			https://github.com/OgliariNatan/applications-with-kivy-in-python
 import kivy
-kivy.require('1.9.1')
+#kivy.require('1.9.1')
 from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.interactive import InteractiveLauncher
 from kivy.lang import Builder
-from kivy.utils import get_color_from_hex
-from kivy.core.window import Window
-from tkinter import *
-from kivy.uix.gridlayout import GridLayout
 
-Window.clarcolor = get_color_from_hex("#FFFFFF")
 
 #Força a aplicação a não iniciar em tela cheia
 from kivy.config import Config
@@ -34,15 +28,9 @@ glayout = None
 class JanelaApp(App):
     pass
 
-def add_lb(**args):
-    lb = Label(text="Natan",
-               size_hint_y=None,
-                height=50,
-                **args)
-    glayout.add_widget(lb)
-    return lb
-
 janela = JanelaApp()
+ji = InteractiveLauncher(janela)
+ji.run()
 
 kvcode = """
 
@@ -51,6 +39,18 @@ StackLayout:
     padding: 50
 
 """
+
+
+
+def add_lb(**args):
+    lb = Label(text="Natan",
+               size_hint_y=None,
+                height=50,
+                **args)
+    glayout.add_widget(lb)
+    return lb
+
+
 
 if(janela.root):
     janela.root_window.remove_widget(janela.root)
@@ -71,9 +71,6 @@ add_lb().italic = True
 #Informa que esta desativado (apagado)
 add_lb(font_size=20).disabled = True
 
-
 add_lb(font_size=20).color = .1, .2, .3, 1
 
 
-ji = InteractiveLauncher(janela)
-ji.run()
