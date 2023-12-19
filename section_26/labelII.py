@@ -50,12 +50,11 @@ janela.root = glayout = Builder.load_string(kvcode)
 janela.root_window.add_widget(glayout)
 
 def add_lb(**args):
-    lb = Label(text="Natan",
-               size_hint_y=None,
+    lb = Label(size_hint_y=None,
                 height=50,
-                **args)
+                    **args)
     glayout.add_widget(lb)
     return lb
 
-
+add_lb(markup=True).text="Na[b]tA [/b]AN"
 
