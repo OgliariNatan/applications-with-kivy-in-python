@@ -221,4 +221,5 @@ jupyter notebook #Abre o jupyter no navegador padrão
 ## Widget ![wd](figure/wid.png)
 
 
-##Label
+## Passos para executar em dispositivos moveis
+![Passos para executar em disp. movel](figure/passos.png)
