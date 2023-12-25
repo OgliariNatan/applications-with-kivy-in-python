@@ -218,7 +218,7 @@ jupyter notebook #Abre o jupyter no navegador padrão
         app.name
 ```
 
-## Widget ![wd](figure/wid.png)
+## Widget tools ![wd](figure/wid.png)
 
 
 ## Passos para executar em dispositivos moveis
