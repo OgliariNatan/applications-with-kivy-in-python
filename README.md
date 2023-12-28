@@ -223,3 +223,8 @@ jupyter notebook #Abre o jupyter no navegador padrão
 
 ## Passos para executar em dispositivos moveis
 ![Passos para executar em disp. movel](figure/passos.png)
+
+
+## Nunca é demais lelembrar
+
+![operadores](figure/operadores.png)
