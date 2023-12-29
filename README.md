@@ -228,3 +228,5 @@ jupyter notebook #Abre o jupyter no navegador padrão
 ## Nunca é demais lelembrar
 
 ![operadores](figure/operadores.png)
+
+![Lógicos](figure/logicos.png)
